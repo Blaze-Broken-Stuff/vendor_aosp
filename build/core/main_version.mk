@@ -18,6 +18,12 @@ ADDITIONAL_SYSTEM_PROPERTIES  += \
     persist.sys.recovery_update=true
 endif
 
+# ProjectBlaze
+ADDITIONAL_SYSTEM_PROPERTIES += \
+	org.blaze.device=$(TARGET_DEVICE) \
+	org.blaze.version=$(BUILD_TYPE) \
+	ro.blaze.maintainer=$(BLAZE_MAINTAINER)
+
 # Versioning props
 ADDITIONAL_SYSTEM_PROPERTIES  += \
     org.pixelexperience.version=$(CUSTOM_VERSION_PROP) \
@@ -25,4 +31,3 @@ ADDITIONAL_SYSTEM_PROPERTIES  += \
     org.pixelexperience.build_date=$(CUSTOM_BUILD_DATE) \
     org.pixelexperience.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
     org.pixelexperience.build_type=$(BLAZE_BUILD_TYPE) \
-    org.pex.version=$(BUILD_TYPE)
