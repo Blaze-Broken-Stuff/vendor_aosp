@@ -1,6 +1,9 @@
 # Branding
 $(call inherit-product, vendor/aosp/config/branding.mk)
 
+# Maintainer
+BLAZE_MAINTAINER ?= Unknown
+
 PRODUCT_BRAND ?= PixelExperience
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0

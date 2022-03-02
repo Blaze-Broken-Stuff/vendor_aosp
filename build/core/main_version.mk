@@ -31,3 +31,5 @@ ADDITIONAL_SYSTEM_PROPERTIES  += \
     org.pixelexperience.build_date=$(CUSTOM_BUILD_DATE) \
     org.pixelexperience.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
     org.pixelexperience.build_type=$(BLAZE_BUILD_TYPE) \
+    org.blaze.version=$(BUILD_TYPE) \
+    ro.blaze.maintainer=$(BLAZE_MAINTAINER)
